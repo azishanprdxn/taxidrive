@@ -142,6 +142,10 @@ table {
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 12px;
@@ -151,4 +155,124 @@ table {
 .wrapper {
   max-width: 60%;
   margin: 0 auto;
+}
+
+a:visited,
+a:link,
+a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 44px;
+  background-color: grey;
+  background: transparent;
+}
+
+.logo {
+  display: block;
+}
+
+.logo>a>figure {
+  float: left;
+  margin-top: 6px;
+  margin-right: 6px;
+  border: 1px solid #000000;
+}
+
+.logo>a>h1 {
+  float: left;
+  padding-top: 16px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+nav {
+  float: right;
+  padding-top: 12px;
+}
+
+nav>ul>li {
+  display: inline;
+  font-size: 9px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+nav>ul>li>a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  position: relative;
+  top: -44px;
+  z-index: -1;
+  background-image: url('https://via.placeholder.com/1220x410?text=Banner');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 410px;
+}
+
+.banner-text {
+  width: 50%;
+  padding: 130px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-image>figure {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.banner-heading {
+  font-size: 30px;
+}
+
+.banner-desc {
+  padding: 12px 0;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.features {
+  margin-top: -44px;
+  background-color: #ead045;
+}
+
+.flexbox {
+  width: 100%;
+  display: flex;
+  padding: 23px 0 45px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox>.feature-section {
+  width: 33.33%;
+  padding: 23px 15px 0 15px;
+  text-align: center;
+}
+
+.feature-icon {
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  color: #ead045;
+  font-size: 20px;
+}
+
+.feature-heading {
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.feature-desc {
+  font-size: 10px;
+  line-height: 1.5;
 }
